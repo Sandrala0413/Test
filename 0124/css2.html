@@ -1,0 +1,405 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            margin-top: 2px;
+            margin-bottom: 2px;
+        }
+
+        .page {
+            display: grid;
+            grid-template-areas:
+                'header header header header header header header header'
+                'left left main main main main right right'
+                'fleft fleft footer footer footer footer fright fright';
+        }
+
+        .item1 {
+            grid-area: header;
+            color: #f4e393;
+            padding: 5px;
+        }
+
+        .headblue {
+            /*梯形*/
+            width: 900px;
+            height: 0;
+            border-top: 85px solid rgb(101, 201, 241);
+            border-right: 150px solid transparent;
+
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+        }
+
+        .head1 {
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+            z-index: 2;
+        }
+
+        .head2{
+            display:flex;
+            justify-content: space-between;
+        }
+
+        .head2_1 {
+            display: flex;
+            align-items: end;
+            position: relative;
+            z-index: 2;
+        }
+
+        .head2_2{
+            display:flex;
+            justify-content: center;
+        }
+
+        .head3 {
+            display: flex;
+            justify-content: space-around;
+            background-color: white;
+        }
+
+        .head3>div {
+            color: brown;
+            padding: 5px;
+            font-size: 20px;
+        }
+
+        .login{
+            border:0px solid skyblue;
+            background-color: skyblue;
+            border-radius: 5px;
+            height: 23px;
+            margin-top: 4px;
+            margin-left: 6px;
+            padding:6px;
+            font-size:20px;
+            display: inline;
+            color:white;
+            text-align: center;
+        }
+
+        .item2 {
+            grid-area: left;
+            background-color: #f3f3f3;
+        }
+
+
+        .item3 {
+            grid-area: main;
+            background-color: #f3f3f3;
+        }
+
+        .main1 {
+            color: skyblue;
+            font-size: 19px;
+            padding-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .main2 {
+            /*梯形*/
+            width: 150px;
+            height: 0;
+            border-bottom: 45px solid #F2BC9D;
+            border-right: 70px solid transparent;
+
+            color: white;
+            font-size: 35px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .main3 {
+            display: flex;
+            align-items: start;
+        }
+
+        .main4 {
+            background-color: white;
+            border: 2px solid skyblue;
+            border-radius: 20px;
+            padding: 10px;
+            display: inline-block;
+            margin: 20px;
+        }
+
+        .main5 {
+            flex: 1;
+            border: 20px solid #58829A;
+            background-color: white;
+            display: inline-block;
+            padding: 10px;
+            margin: 20px;
+            border-radius: 20px;
+        }
+
+        .main5>div {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .main6 {
+            background-color: white;
+            color: gray;
+            border: 0.5px solid lightgray;
+            border-radius: 5px;
+            font-size: 20px;
+            display: flex;
+            margin: 10px;
+            padding: 10px;
+            position: absolute;
+            left: 750px;
+        }
+
+        .main6>div {
+            padding: 3px;
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+
+        /**/
+
+        /**/
+        .item4 {
+            grid-area: right;
+            background-color: #f3f3f3;
+        }
+
+        /**/
+
+        /**/
+        .item5 {
+            grid-area: footer;
+            background-color: #58829A;
+            color: white;
+            padding: 5px;
+        }
+
+        .footer1 {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .footer3 {
+            flex-grow: 1;
+            padding-left: 8px;
+        }
+
+        /**/
+
+        /**/
+        .item6 {
+            grid-area: fleft;
+            background-color: #58829A;
+        }
+
+        /**/
+
+        /**/
+        .item7 {
+            grid-area: fright;
+            background-color: #58829A;
+        }
+
+        /**/
+    </style>
+    <title>國立臺中教育大學-法規表單</title>
+    <link rel="icon" type="image/x-icon" href="https://cs.ntcu.edu.tw/_app/assets/logo-221ef1b1.png">
+</head>
+
+<body>
+    <div class="page">
+        
+        <div class="item1">
+            <div class="headblue">
+            </div>
+            <div class="head1">
+                <h4>國立臺中教育大學 National Taichung University of Education</h4>
+                <h4 style="color:#58829A;">繁體中文 Traditional Chinese | 英文English</h4>
+            </div>
+
+            <div class="head2">
+                <div class="head2_1">
+                    <h1>資訊工程學系</h1>
+                    <h4>Department of Computer Science</h4>
+                </div>
+
+                <div class="head2_2">
+                    <img src="https://cs.ntcu.edu.tw/_app/assets/logo-221ef1b1.png" alt="logo" width="45px" height="45px" style="margin-right: 5px;">
+                    <img src="https://cs.ntcu.edu.tw/_app/assets/ntcu-26ab0f69.png" alt="logo" width="45px" height="45px">
+                    <div class="login">login</div>
+                </div>
+            </div>
+
+
+
+            <div class="head3">
+                <div>〈</div>
+                <div>訊息公告</div>
+                <div>系所成員</div>
+                <div>系所介紹</div>
+                <div>招生資訊</div>
+                <div>學生資訊</div>
+                <div>學術研究</div>
+                <div>錄紀動活</div>
+                <div>法規表單</div>
+                <div>獲獎公告</div>
+                <div>實習資訊</div>
+                <div>〉</div>
+            </div>
+
+        </div>
+
+        <div class="item2">
+
+        </div>
+        <div class="item3">
+            <div class="main1">
+                首頁 ➤ 法規表單
+            </div>
+
+            <div class="main2">
+                法規表單
+            </div>
+            <div class="main3">
+                <div class="main4">
+                    <br>
+                    全部
+                    <br><br>
+                    課務相關
+                    <br><br>
+                    系徽
+                    <br><br>
+                    碩士論文
+                    <br><br>
+                    雙主修
+                    <br><br>
+                    轉系
+                    <br><br>
+                    課程先修申請
+                    <br><br>
+                    學士專題
+                    <br><br>
+                    實習
+                    <br><br>
+                    獎學金
+                    <br><br>
+                </div>
+
+                <div class="main5">
+                    <div>
+                        <p>專門課程三修外系申請表</p>
+                        <p style="color:skyblue;">下載 | 預覽</p>
+                    </div>
+                    <hr>
+                    <div>
+                        <p>系徽</p>
+                        <p style="color:skyblue;">下載 | 預覽</p>
+                    </div>
+                    <hr>
+                    <div>
+                        <p>資訊工程學系碩士班研究生碩士學位考試實施要點(含附表) 112.6.1修正通過</p>
+                        <p style="color:skyblue;">下載 | 預覽</p>
+                    </div>
+                    <hr>
+                    <div>
+                        <p>資訊工程學系研究成果評審要點(112..6.1修正通過)</p>
+                        <p style="color:skyblue;">下載 | 預覽</p>
+                    </div>
+                    <hr>
+                    <div>
+                        <p>論文摘要格式說明</p>
+                        <p style="color:skyblue;">下載 | 預覽</p>
+                    </div>
+                    <hr>
+                    <div>
+                        <p>研究生論文指導教授同意書</p>
+                        <p style="color:skyblue;">下載 | 預覽</p>
+                    </div>
+                    <hr>
+                    <div>
+                        <p>研究論文撰寫參考格式</p>
+                        <p style="color:skyblue;">下載 | 預覽</p>
+                    </div>
+                    <hr>
+                    <div>
+                        <p>資訊工程學系學士班雙主修修讀要點(112.7.20)</p>
+                        <p style="color:skyblue;">下載 | 預覽</p>
+                    </div>
+                    <hr>
+                    <div>
+                        <p>資訊工程學系轉系生審核要點</p>
+                        <p style="color:skyblue;">下載 | 預覽</p>
+                    </div>
+                    <hr>
+                    <div>
+                        <div class="main6">
+                            <div>〈</div>
+                            <div>1</div>
+                            <div>2</div>
+                            <div>3</div>
+                            <div>4</div>
+                            <div>〉</div>
+                        </div>
+                        <br><br><br><br>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+
+        <div class="item4">
+
+        </div>
+        <div class="item5">
+            <div class="footer1">
+                <img src="https://cs.ntcu.edu.tw/_app/assets/ntcuCs-183fa630.png" alt="footerlogo" width="90px" height="90px" style="display: inline; margin-top: 6px;">
+                <div class="footer3">
+                    <h2>臺中教育大學 資訊工程學系</h2>
+                    <h4>地址:403514臺中市西區民生路140號</h4>
+                    <h4>Address:No. 140, Minsheng Rd, West District, Taichung City, 403514</h4>
+                </div>
+
+                <div class="footer4">
+                    <h4>辦公室:求真樓2樓 K202</h4>
+                    <h4>傳真:04-22183580</h4>
+                    <h4 style="color:#F9EEB6;">電話:04-22183582</h4>
+                    <h4 style="color:#F9EEB6;">E-mail:cis@mail.ntcu.edu.tw</h4>
+                </div>
+            </div>
+
+            <hr style="color:lightgray;">
+            <p style="color:lightgray; ">
+                <center>Copyright © 2022 National Taichung University of Education, Computer Science All Rights Reserved
+                </center>
+            </p>
+        </div>
+        <div class="item6">
+
+        </div>
+
+        <div class="item7">
+
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+<!DOCYTYPE html>
+<html>
+<head></head>
+<body>
+
+    <h1>表單填寫</h1>
+    <form>
+        <label for="name">姓名：</label>
+        <input type="text" id="name" name="name" placeholder="輸入姓名"><br>
+        <label for="pwd">密碼：</label>
+        <input type="password" id="pwd" name="pwd" placeholder="輸入密碼"><br>
+        <label for="day">生日：</lebel>
+        <input type="date" id="day" name="day"><br><br>
+
+        <label>選擇性別：</label><br>
+        <input type="radio" id="male" name="sex" value="boy">
+        <lebel for="male">男</lebel><br>
+        <input type="radio" id="female" name="sex" value="female">
+        <lebel for="female">女</lebel><br><br>
+
+        <label>選擇擅長程式語言：</label><br>
+        <input type="checkbox" id="html" name="language1" value="html">
+        <lebel for="html">HTML</lebel><br>
+        <input type="checkbox" id="css" name="language2" value="css">
+        <lebel for="css">CSS</lebel><br>
+        <input type="checkbox" id="javascript" name="language3" value="javascript">
+        <lebel for="javascript">Javascript</lebel><br>
+        <input type="checkbox" id="c" name="language4" value="c">
+        <lebel for="c">C/C++</lebel><br>
+        <input type="checkbox" id="java" name="language5" value="java">
+        <lebel for="java">Java</lebel><br>
+        <input type="checkbox" id="py" name="language6" value="py">
+        <lebel for="py">Python</lebel><br><br>
+
+        <label for="grade">就讀年級：</label>
+        <select id="grade" name="grade">
+            <option value="1">大一</option>
+            <option value="2">大二</option>
+            <option value="3">大三</option>
+            <option value="4">大四</option>
+        </select>
+        <br>
+        <lebel for="email">Email:</lebel>
+        <input type="email" id="email" placeholder="輸入Email">
+        <br><br>
+
+        <lebel for="comment">備註：</lebel><br>
+        <textarea id="comment" name="comment" rows="2" cols="20" placeholder="輸入備註"></textarea>
+        <br><br>
+
+        <lebel for="file">上傳頭像圖片：</lebel>
+        <input type="file" id="file" name="file">
+        <br>
+
+        <input type="submit" id="submit" value="submit">
+    </form>
+</body>
+
+</html>
